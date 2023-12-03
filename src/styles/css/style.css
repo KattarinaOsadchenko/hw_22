@@ -85,6 +85,7 @@ select {
 }
 
 .how-it-works form, .banner form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
@@ -113,6 +114,7 @@ select {
 }
 
 .how-it-works form, .banner form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
@@ -174,6 +176,7 @@ select {
 }
 
 .how-it-works form, .banner form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
@@ -276,6 +279,7 @@ a, .header__menu li:last-child a {
 }
 
 .how-it-works form, .banner form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
@@ -329,6 +333,7 @@ a, .header__menu li:last-child a {
 }
 
 .how-it-works form, .banner form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
@@ -417,6 +422,7 @@ a, .header__menu li:last-child a {
 }
 
 .banner form, .how-it-works form {
+  display: flex;
   gap: 10px;
   max-width: 500px;
 }
