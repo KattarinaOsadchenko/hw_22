@@ -1,3 +1,5 @@
+@use './../../common/variables' as var;
+@use './../../common/extends' as*;
 .how-it-works{
   padding: 135px 0;
   background-color: #F4F4FA;
@@ -12,13 +14,13 @@
     margin-bottom: 77px;
     &_paragraph{
       width: 363px;
-      border-radius: $default-border-radius 100px $default-border-radius $default-border-radius;
-      background-color: $additional-color;
+      border-radius: var.$default-border-radius 100px var.$default-border-radius var.$default-border-radius;
+      background-color: var.$additional-color;
       padding: 36px 65px 45px 30px;
     }
     &_img{
       width: 66px;
-      border-radius: $default-border-radius;
+      border-radius: var.$default-border-radius;
       background: rgba(46, 172, 243, 0.50);
       padding: 16px;
       margin-bottom: 30px;
@@ -32,7 +34,7 @@
     align-items: flex-start;
     flex-direction: row-reverse;
     & form label{
-      color: $additional2-color;
+      color: var.$additional2-color;
     }
 
   }

@@ -4,7 +4,7 @@
   transition: .3s;
 }
 %default-border-radius{
-  border-radius: var. $default-border-radius;
+  border-radius: var.$default-border-radius;
 }
 %bg-image{
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 }
 %terms {
   form {
-    @extend .d-flex;
+    //@extend.d-flex;
 
     gap: 10px;
     max-width: 500px;

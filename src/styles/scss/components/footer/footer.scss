@@ -1,5 +1,6 @@
+@use './../../common/variables' as var;
 .footer{
-  background-color: $additional3-color;
+  background-color: var.$additional3-color;
   height: 358px;
   &__list {
     padding-top: 109px;
@@ -9,10 +10,10 @@
     gap: 30px;
     & p{
       width: 363px;
-      color: $color-text-footer;
-      font-size: $font-xxs;
+      color: var.$color-text-footer;
+      font-size: var.$font-xxs;
       font-style: normal;
-      font-weight: $font-regular;
+      font-weight: var.$font-regular;
       line-height: 1.2;
     }
   }
@@ -23,16 +24,16 @@
     }
 
     & a{
-      color: $additional-color;
-      font-size: $font-s;
+      color: var.$additional-color;
+      font-size: var.$font-s;
       font-style: normal;
-      font-weight: $font-light;
+      font-weight: var.$font-light;
     }
     &_item{
-      color: $color-text-footer;
-      font-size: $font-xxs;
+      color: var.$color-text-footer;
+      font-size: var.$font-xxs;
       font-style: normal;
-      font-weight: $font-regular;
+      font-weight: var.$font-regular;
       line-height: 1.2;
     }
     &_contact-us{

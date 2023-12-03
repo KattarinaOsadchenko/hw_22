@@ -1,3 +1,4 @@
+@use './../../common/variables' as var;
 .schedule{
   padding: 135px 0;
   &__content{
@@ -20,11 +21,11 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.30);
     padding-bottom: 13px;
     &_numbers{
-      font-weight: $font-medium;
+      font-weight: var.$font-medium;
     }
     &_text{
-      font-weight: $font-regular;
-      font-size: $font-s;
+      font-weight: var.$font-regular;
+      font-size: var.$font-s;
     }
   }
 }

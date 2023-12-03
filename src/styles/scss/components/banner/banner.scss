@@ -1,7 +1,10 @@
+@use './../../common/variables' as var;
+@use './../../common/extends' as *;
+@use './../../common/mixins' as mix;
 .banner{
   height: 100vh;
-  @include bg-image('./../../assets/pictures/background_top.jpg');
-  padding-top: $header-height;
+  @include mix.bg-image('./../../assets/pictures/background_top.jpg');
+  padding-top: var.$header-height;
   @extend %terms;
   .container{
     @extend %height100;
@@ -12,7 +15,7 @@
       content: '';
       display: block;
       width: 360px;
-      @include bg-image('./../../assets/pictures/Dot.svg');
+      @include mix.bg-image('./../../assets/pictures/Dot.svg');
       position: absolute;
       height: $height + px;
       bottom: - ($height / 2) + px;
@@ -25,9 +28,9 @@
 
   h1{
     max-width: 570px;
-    font-size: $font-xxl;
-    font-weight: $font-medium;
-    color: $additional-color;
+    font-size: var.$font-xxl;
+    font-weight: var.$font-medium;
+    color: var.$additional-color;
     margin-bottom: 80px;
   }
   &__test{
