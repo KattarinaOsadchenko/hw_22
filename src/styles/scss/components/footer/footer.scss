@@ -1,0 +1,46 @@
+.footer{
+  background-color: $additional3-color;
+  height: 358px;
+  &__list {
+    padding-top: 109px;
+  }
+
+  .logo{
+    gap: 30px;
+    & p{
+      width: 363px;
+      color: $color-text-footer;
+      font-size: $font-xxs;
+      font-style: normal;
+      font-weight: $font-regular;
+      line-height: 1.2;
+    }
+  }
+  &__menu{
+    ul{
+      gap: 32px;
+
+    }
+
+    & a{
+      color: $additional-color;
+      font-size: $font-s;
+      font-style: normal;
+      font-weight: $font-light;
+    }
+    &_item{
+      color: $color-text-footer;
+      font-size: $font-xxs;
+      font-style: normal;
+      font-weight: $font-regular;
+      line-height: 1.2;
+    }
+    &_contact-us{
+      text-align: right;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+
+  }
+}

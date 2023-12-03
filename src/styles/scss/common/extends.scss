@@ -1,0 +1,31 @@
+@use './variables' as var;
+
+%default-transition{
+  transition: .3s;
+}
+%default-border-radius{
+  border-radius: var. $default-border-radius;
+}
+%bg-image{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+%height100{
+  height: 100%;
+}
+%terms {
+  form {
+    @extend .d-flex;
+
+    gap: 10px;
+    max-width: 500px;
+
+    label{
+      font-size: var.$font-xs;
+      font-weight: var.$font-light;
+      color: var.$additional-color;
+    }
+
+  }
+}

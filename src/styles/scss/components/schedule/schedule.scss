@@ -1,0 +1,30 @@
+.schedule{
+  padding: 135px 0;
+  &__content{
+    gap: 40px;
+  }
+
+  &__text{
+    width: 35%;
+    gap: 55px;
+  }
+  &__classification{
+    gap: 30px;
+    &-content :last-child{
+      border-bottom: none;
+    }
+  }
+  &__data{
+    gap:21px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+    padding-bottom: 13px;
+    &_numbers{
+      font-weight: $font-medium;
+    }
+    &_text{
+      font-weight: $font-regular;
+      font-size: $font-s;
+    }
+  }
+}
