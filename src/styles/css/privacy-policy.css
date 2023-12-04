@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header__menu li:last-child a, a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.header__menu ul {
+  height: 100%;
+}
+
+.header__menu li:last-child a, a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.header__menu ul {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Poppins-SemiBold.eot");
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("assets/fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Poppins-SemiBold.woff2") format("woff2"), url("assets/fonts/Poppins-SemiBold.woff") format("woff"), url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("./../../assets/fonts/Poppins-Medium.eot");
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("./../../assets/fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/Poppins-Medium.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Medium.woff") format("woff"), url("./../../assets/fonts/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("./../../assets/fonts/Poppins-Light.eot");
+  src: local("Poppins Light"), local("Poppins-Light"), url("./../../assets/fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/Poppins-Light.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Light.woff") format("woff"), url("./../../assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("./../../assets/fonts/Poppins-Regular.eot");
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("./../../assets/fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("./../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("./../../assets/fonts/Poppins-Regular.woff") format("woff"), url("./../../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+.header__menu li:last-child a, a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.header__menu ul {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2;
+  color: #000;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+a.default:hover {
+  color: #2EACF3;
+}
+a.blue {
+  color: #2EACF3;
+}
+a.blue:hover {
+  color: blue;
+}
+a.black {
+  color: #000;
+}
+
+.btn {
+  padding: 14px 61px;
+  color: #FFF;
+  background-color: #2EACF3;
+  border: 2px solid #2EACF3;
+  border-radius: 5px 27px;
+}
+.btn:hover {
+  background-color: steelblue;
+  border-color: #2EACF3;
+}
+
+a, .header__menu li:last-child a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.header__menu ul {
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 85px;
+  padding: 24px 0;
+}
+.header.text-dark .header__menu a {
+  color: #000;
+}
+.header__menu ul {
+  gap: 60px;
+}
+.header__menu li:last-child a {
+  padding: 7px 19px 4px;
+  background-color: #2EACF3;
+  border: 1px solid #2EACF3;
+}
+.header__menu li:last-child a:hover {
+  background-color: transparent;
+}
+.header__menu a {
+  font-size: 16px;
+  color: #FFF;
+}
+
+a, .header__menu li:last-child a {
+  transition: 0.3s;
+}
+
+.header__menu li:last-child a {
+  border-radius: 5px;
+}
+
+.header__menu ul {
+  height: 100%;
+}
+
+.privacy-policy {
+  padding-top: 235px;
+}
+.privacy-policy .container {
+  position: relative;
+}
+.privacy-policy__content {
+  gap: 110px;
+  margin-bottom: 164px;
+}
+.privacy-policy__general, .privacy-policy__article {
+  gap: 46px;
+}
+.privacy-policy h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: #000;
+}
+
+.footer {
+  background-color: #343434;
+  height: 358px;
+}
+.footer__list {
+  padding-top: 109px;
+}
+.footer .logo {
+  gap: 30px;
+}
+.footer .logo p {
+  width: 363px;
+  color: #909090;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.footer__menu ul {
+  gap: 32px;
+}
+.footer__menu a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
+.footer__menu_item {
+  color: #909090;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.footer__menu_contact-us {
+  text-align: right;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/*# sourceMappingURL=privacy-policy.css.map */

@@ -1,0 +1,27 @@
+@use "./../../common/variables" as var;
+@use "./../../common/extends" as *;
+
+.privacy-policy {
+  padding-top: 235px;
+
+  .container {
+    position: relative;
+
+  }
+
+  &__content{
+    gap: 110px;
+    margin-bottom: 164px;
+  }
+
+  &__general, &__article {
+    gap: 46px;
+  }
+
+  h1{
+    font-size: var.$font-xxl;
+    font-weight: var.$font-medium;
+    color: var.$additional2-color;
+  }
+
+}

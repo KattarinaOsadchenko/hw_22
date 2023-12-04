@@ -1,24 +1,34 @@
 @use './../../common/variables' as var;
 @use './../../common/extends' as *;
+
 .header{
-  padding: 24px 0;
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   max-height: var.$header-height;
+  padding: 24px 0;
+
+  &.text-dark &__menu a {
+    color: var.$additional2-color;
+  }
+
   &__menu{
     ul{
-      gap: 60px;
       @extend %height100;
+
+      gap: 60px;
     }
+
     li:last-child {
-      a{
+      a {
         @extend %default-border-radius;
+        @extend %default-transition;
+
         padding: 7px 19px 4px;
         background-color: var.$accent-color;
         border: 1px solid var.$accent-color;
-        @extend %default-transition;
 
         &:hover {
           background-color: transparent;
@@ -26,9 +36,10 @@
 
       }
     }
+
     a {
-      color: var.$additional-color;
       font-size: var.$font-s;
+      color: var.$additional-color;
 
     }
   }
