@@ -21,8 +21,7 @@
       gap: 60px;
     }
 
-    li:last-child {
-      a {
+    li:last-child a{
         @extend %default-border-radius;
         @extend %default-transition;
 
@@ -34,7 +33,7 @@
           background-color: transparent;
         }
 
-      }
+
     }
 
     a {
