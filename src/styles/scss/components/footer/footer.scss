@@ -1,45 +1,52 @@
 @use './../../common/variables' as var;
+
 .footer{
-  background-color: var.$additional3-color;
   height: 358px;
-  &__list {
-    padding-top: 109px;
-  }
+  padding-top: 109px;
+  background-color: var.$additional3-color;
 
   .logo{
     gap: 30px;
+
     & p{
       width: 363px;
-      color: var.$color-text-footer;
+
       font-size: var.$font-xxs;
-      font-style: normal;
       font-weight: var.$font-regular;
+      font-style: normal;
       line-height: 1.2;
+      color: var.$color-text-footer;
     }
   }
+
   &__menu{
+    gap: 33px;
+
     ul{
       gap: 32px;
 
     }
 
     & a{
-      color: var.$additional-color;
       font-size: var.$font-s;
-      font-style: normal;
       font-weight: var.$font-light;
-    }
-    &_item{
-      color: var.$color-text-footer;
-      font-size: var.$font-xxs;
       font-style: normal;
-      font-weight: var.$font-regular;
-      line-height: 1.2;
+      color: var.$additional-color;
     }
+
+    &_item{
+      font-size: var.$font-xxs;
+      font-weight: var.$font-regular;
+      font-style: normal;
+      line-height: 1.2;
+      color: var.$color-text-footer;
+    }
+
     &_contact-us{
-      text-align: right;
-      align-items: flex-end;
       gap: 8px;
+      align-items: flex-start;
+      text-align: right;
+      
     }
 
 

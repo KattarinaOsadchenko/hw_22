@@ -5,10 +5,10 @@
 .banner{
   @extend %terms;
 
-  @include mix.bg-image('./../../assets/pictures/background_top.jpg');
+  @include mix.bg-image('./../../assets/pictures/jpg/background-top.jpg');
 
   height: 100vh;
-  padding-top: var.$header-height;
+  padding-top: 225px;
 
   .container{
     @extend %height100;
@@ -18,7 +18,7 @@
     &::after{
       $height: 140;
 
-      @include mix.bg-image('./../../assets/pictures/Dot.svg');
+      @include mix.bg-image('./../../assets/pictures/svg/dot.svg');
 
       content: '';
 

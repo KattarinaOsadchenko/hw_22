@@ -1,15 +1,32 @@
-@media (max-width: $container-width) {
-.container {
-  max-width: $breakpoint_lg;
-}
-}
-@media (max-width: $breakpoint_lg){
-  .container {
-    max-width: $breakpoint_md;
+@use './../../common/variables' as var;
+@use './../../common/media-mixins' as mix;
+
+@include mix.screen_lg {
+  @media (max-width: var.$screen_lg){
+    .banner h1, .btn {
+      color: var.$adaptive-color;
+    }
+
+    .banner form label {
+      color: var.$adaptive-color;
+    }
   }
 }
-@media (max-width: $breakpoint_md) {
-  .container{
-    max-width: $breakpoint_sm;
+
+
+@include mix.screen_md {
+  @media (max-width: var.$screen_md){
+    .banner h1 {
+      max-width: 435px;
+      font-size: var.$font-xl;
+    };
   }
 }
+
+//@include mix.screen_sm {
+//  @media (max-width: var.$screen_sm){
+//    .header__menu ul {
+//      gap: 25px;
+//    };
+//  }
+//}
