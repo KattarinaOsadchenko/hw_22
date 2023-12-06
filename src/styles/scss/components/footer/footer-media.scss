@@ -1,0 +1,23 @@
+@use './../../common/variables' as var;
+@use './../../common/media-mixins' as mix;
+
+@include mix.screen_sm {
+  @media (max-width: var.$screen_sm) {
+    .logo {
+      width: 200px;
+    }
+
+    .logo p {
+      max-width: 200px;
+    }
+
+    .footer__menu {
+      gap: 20px;
+    }
+
+    .footer__menu ul {
+      gap: 20px;
+    }
+  }
+}
+

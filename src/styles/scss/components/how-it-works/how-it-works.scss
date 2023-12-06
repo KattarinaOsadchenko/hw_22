@@ -1,38 +1,48 @@
 @use './../../common/variables' as var;
 @use './../../common/extends' as*;
+
 .how-it-works{
+  @extend %terms;
+
   padding: 135px 0;
   background-color: #F4F4FA;
-  @extend %terms;
+
   &__content{
     h2{
       margin-bottom: 80px;
     }
   }
+
   &__functions{
     gap: 40px;
     margin-bottom: 77px;
+
     &_paragraph{
       width: 363px;
-      border-radius: var.$default-border-radius 100px var.$default-border-radius var.$default-border-radius;
-      background-color: var.$additional-color;
       padding: 36px 65px 45px 30px;
+      background-color: var.$additional-color;
+      border-radius: var.$default-border-radius 100px var.$default-border-radius var.$default-border-radius;
     }
+
     &_img{
       width: 66px;
-      border-radius: var.$default-border-radius;
-      background: rgba(46, 172, 243, 0.50);
-      padding: 16px;
       margin-bottom: 30px;
+      padding: 16px;
+
+      background: rgb(46 172 243 / 50%);
+      border-radius: var.$default-border-radius;
     }
 
   }
+
   h3{
     margin-bottom: 15px;
   }
+
   &__bottom{
-    align-items: flex-start;
     flex-direction: row-reverse;
+    align-items: flex-start;
+
     & form label{
       color: var.$additional2-color;
     }

@@ -7,9 +7,11 @@
       color: var.$adaptive-color;
     }
 
-    .banner form label {
+    label#adaptive-el {
+      width: 360px;
       color: var.$adaptive-color;
     }
+
   }
 }
 
@@ -19,14 +21,25 @@
     .banner h1 {
       max-width: 435px;
       font-size: var.$font-xl;
-    };
+    }
   }
 }
 
-//@include mix.screen_sm {
-//  @media (max-width: var.$screen_sm){
-//    .header__menu ul {
-//      gap: 25px;
-//    };
-//  }
-//}
+@include mix.screen_sm {
+  @media (max-width: var.$screen_sm){
+    .banner h1, .btn {
+      color: var.$adaptive2-color;
+    }
+
+    label#adaptive-el {
+      width: 360px;
+      color: var.$adaptive2-color;
+    }
+
+    .banner h1 {
+      max-width: 435px;
+      font-size: 35px;
+    }
+
+  }
+}
