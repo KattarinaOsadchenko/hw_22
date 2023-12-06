@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-compile-home-page": "sass --watch ./src/styles/scss/home-page.scss:./src/styles/css/style.css",
-    "scss-compile-privacy-policy": "sass --watch ./src/styles/scss/privacy-policy1.scss:./src/styles/css/privacy-policy.css"
+    "scss-compile-privacy-policy": "sass --watch ./src/styles/scss/second-page.scss:./src/styles/css/privacy-policy.css"
   },
   "author": "",
   "license": "ISC",
