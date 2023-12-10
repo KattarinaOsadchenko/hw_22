@@ -9,6 +9,10 @@ body{
   font-weight: var.$font-regular;
   line-height: 1.2;
   color: var.$main-font-color;
+
+  .page__privacy {
+    background-color: var.$additional4-color;
+  }
 }
 
 .container {

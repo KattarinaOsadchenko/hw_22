@@ -142,6 +142,9 @@ body {
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
 }
+body .page__privacy {
+  background-color: #F4F4FA;
+}
 
 .container {
   width: 100%;
@@ -246,6 +249,33 @@ a, .header__menu li:last-child a {
   color: #FFF;
 }
 
+@media (max-width: 992px) and (max-width: 992px) {
+  .header__menu a {
+    color: blanchedalmond;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .header__menu a {
+    color: lightpink;
+  }
+  .header__menu ul {
+    gap: 20px;
+  }
+  .header .logo {
+    width: 160px;
+  }
+}
+@media (max-width: 480px) and (max-width: 480px) {
+  .header__content {
+    flex-wrap: wrap;
+  }
+  .header__menu ul {
+    gap: 15px;
+  }
+  .header .logo {
+    width: 160px;
+  }
+}
 a, .header__menu li:last-child a {
   transition: 0.3s;
 }
@@ -278,43 +308,74 @@ a, .header__menu li:last-child a {
 }
 
 .footer {
+  padding: 109px 0;
   background-color: #343434;
-  height: 358px;
-}
-.footer__list {
-  padding-top: 109px;
 }
 .footer .logo {
   gap: 30px;
 }
 .footer .logo p {
   width: 363px;
-  color: #909090;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.2;
+  color: #909090;
+}
+.footer__menu {
+  gap: 33px;
 }
 .footer__menu ul {
   gap: 32px;
 }
 .footer__menu a {
-  color: #FFF;
   font-size: 16px;
-  font-style: normal;
   font-weight: 300;
+  font-style: normal;
+  color: #FFF;
 }
 .footer__menu_item {
-  color: #909090;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 1.2;
+  color: #909090;
 }
 .footer__menu_contact-us {
-  text-align: right;
-  align-items: flex-end;
   gap: 8px;
+  align-items: flex-start;
+  text-align: right;
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .logo {
+    width: 200px;
+  }
+  .logo p {
+    max-width: 200px;
+  }
+  .footer__menu {
+    gap: 20px;
+  }
+  .footer__menu ul {
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=privacy-policy.css.map */

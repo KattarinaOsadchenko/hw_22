@@ -16,7 +16,27 @@
     }
 
     .header__menu ul {
-      gap: 25px;
+      gap: 20px;
+    }
+
+    .header .logo {
+      width: 160px;
     }
   }
 }
+
+@include mix.screen_xs {
+  @media (max-width: var.$screen_xs){
+    .header__content {
+      flex-wrap: wrap;
+    }
+    .header__menu ul {
+      gap: 15px;
+    }
+    .header .logo {
+      width: 160px;
+    }
+
+  }
+}
+

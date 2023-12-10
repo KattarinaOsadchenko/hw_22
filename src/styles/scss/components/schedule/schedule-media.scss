@@ -8,6 +8,14 @@
       flex-direction: column;
       align-items: center;
     }
+    .schedule__text {
+      max-width: 100%;
+      text-align: justify;
+
+      h2 {
+       text-align: center;
+      }
+    }
   }
 }
 

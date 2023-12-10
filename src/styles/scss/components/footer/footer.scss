@@ -1,8 +1,7 @@
 @use './../../common/variables' as var;
 
 .footer{
-  height: 358px;
-  padding-top: 109px;
+  padding: 109px 0;
   background-color: var.$additional3-color;
 
   .logo{

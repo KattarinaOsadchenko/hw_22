@@ -7,8 +7,10 @@
 
   @include mix.bg-image('./../../assets/pictures/jpg/background-top.jpg');
 
+
   height: 100vh;
-  padding-top: 225px;
+  min-height: 800px;
+  padding-top: var.$header-height;
 
   .container{
     @extend %height100;
@@ -35,6 +37,9 @@
 
   &__content{
     @extend %height100;
+
+    align-items: start;
+    justify-content: center;
   }
 
   h1{

@@ -1,6 +1,27 @@
 @use './../../common/variables' as var;
 @use './../../common/media-mixins' as mix;
 
+@include mix.screen_md {
+  @media (max-width: var.$screen_md) {
+    .footer {
+      padding: 50px 0;
+    }
+
+    .footer__list {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     align-items: center;
+   }
+
+    .footer__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
 @include mix.screen_sm {
   @media (max-width: var.$screen_sm) {
     .logo {

@@ -23,3 +23,9 @@
     @content;
   }
 }
+
+@mixin screen_xs() {
+  @media (max-width: var.$screen_xs){
+    @content;
+  }
+}

@@ -195,6 +195,9 @@ body {
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.7);
 }
+body .page__privacy {
+  background-color: #F4F4FA;
+}
 
 .container {
   width: 100%;
@@ -327,7 +330,21 @@ a, .header__menu li:last-child a {
     color: lightpink;
   }
   .header__menu ul {
-    gap: 25px;
+    gap: 20px;
+  }
+  .header .logo {
+    width: 160px;
+  }
+}
+@media (max-width: 480px) and (max-width: 480px) {
+  .header__content {
+    flex-wrap: wrap;
+  }
+  .header__menu ul {
+    gap: 15px;
+  }
+  .header .logo {
+    width: 160px;
   }
 }
 a, .header__menu li:last-child a {
@@ -363,7 +380,8 @@ a, .header__menu li:last-child a {
 .banner {
   background-image: url("./../../assets/pictures/jpg/background-top.jpg");
   height: 100vh;
-  padding-top: 225px;
+  min-height: 800px;
+  padding-top: 85px;
 }
 .banner .container {
   position: relative;
@@ -377,6 +395,10 @@ a, .header__menu li:last-child a {
   display: block;
   width: 360px;
   height: 140px;
+}
+.banner__content {
+  align-items: start;
+  justify-content: center;
 }
 .banner h1 {
   max-width: 661px;
@@ -425,7 +447,7 @@ a, .header__menu li:last-child a {
 }
 .schedule__text {
   gap: 55px;
-  width: 35%;
+  max-width: 35%;
 }
 .schedule__classification {
   gap: 30px;
@@ -450,6 +472,13 @@ a, .header__menu li:last-child a {
   .schedule__content {
     flex-direction: column;
     align-items: center;
+  }
+  .schedule__text {
+    max-width: 100%;
+    text-align: justify;
+  }
+  .schedule__text h2 {
+    text-align: center;
   }
 }
 @media (max-width: 767px) and (max-width: 767px) {
@@ -530,6 +559,7 @@ a, .header__menu li:last-child a {
 }
 .how-it-works__bottom {
   flex-direction: row-reverse;
+  gap: 94px;
   align-items: flex-start;
 }
 .how-it-works__bottom form label {
@@ -554,8 +584,7 @@ a, .header__menu li:last-child a {
   }
 }
 .footer {
-  height: 358px;
-  padding-top: 109px;
+  padding: 109px 0;
   background-color: #343434;
 }
 .footer .logo {
@@ -594,6 +623,22 @@ a, .header__menu li:last-child a {
   text-align: right;
 }
 
+@media (max-width: 767px) and (max-width: 767px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 576px) and (max-width: 576px) {
   .logo {
     width: 200px;
